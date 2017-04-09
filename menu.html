@@ -1,14 +1,37 @@
 ---
 layout: default
+menu:
+  - image_path: /uploads/wrap.jpg
+    alt: Falafel
+    des: Description & Food allergy & Ingredients & Minimum quantity
+    button:
+    price: 10.00
+  - image_path: /uploads/wrap.jpg
+    alt: Falafel
+    des: Description & Food allergy & Ingredients & Minimum quantity
+    button:
+    price: 10.00
+  - image_path: /uploads/wrap.jpg
+    alt: Falafel
+    des: Description & Food allergy & Ingredients & Minimum quantity
+    button:
+    price: 10.00
+  - image_path: /uploads/wrap.jpg
+    alt: Falafel
+    des: Description & Food allergy & Ingredients & Minimum quantity
+    button:
+    price: 10.00
+
 ---
 <h2> Menu </h2>
 <section class="grid">
+  {% for menu in page.menu %}
   <div class="col-6_sm-12">
-    <img src="falafel" alt="Zucchini Balls"/>
+    <img src="{{menu.image_path}}" alt="menu.alt"/>
     <p>
-      Description & Food allergy & Ingredients & Minimum quantity
+      {{menu.des}}
     </p>
-    <button
+    <button {{menu.button}} >
     class="snipcart-add-item"
     data-item-id="{{item.id}}"
     data-item-name="{{item.name}}"
@@ -18,6 +41,7 @@ layout: default
     data-item-description="Some fresh Falafel">
         Buy Me!
 </button>
+{% endfor %}
   </div>
   <div class="col-6_sm-12">
     <img src="falafel" alt="Falafel"/>
