@@ -95,6 +95,10 @@ li {
   padding: 5vw;
 }
 
+.alternate-section {
+  background-color: #efefef;
+}
+
 /* Banner */
 
 .homepage-banner-section {
@@ -118,11 +122,7 @@ li {
 
 /*  About us */
 
-.team {
-  margin-top: 7em;
-  padding-right: 13em;
-}
-
-.red {
-  background-color: red;
+.about-section img {
+  padding: 2rem;
+  border-radius: 50%;
 }
