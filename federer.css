@@ -3,16 +3,17 @@
   box-sizing: border-box;
   margin: 0px;
   border: 0px;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  color: #4c4c4c;
 }
 
 /* General */
 
 [class*=grid]{
   margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
 }
 
 img {
@@ -31,7 +32,7 @@ div .grid .nav {
 nav a {
   text-decoration: none;
   padding: 30px 10px;
-  font-size: 1em;
+  font-size: 1.2rem;
   color: #aa0c0c;
   display: inline-block;
 }
@@ -47,7 +48,7 @@ header .icon img {
 
 header .name {
   text-align: left;
-  font-size: 1.5em;
+  font-size: 1.8rem;
   font-family: 'Comfortaa', cursive;
   margin: 10px 0;
   color: #aa0c0c;
@@ -55,44 +56,64 @@ header .name {
 
 /* Header */
 
+p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #4d4d4d;
+}
+
+.benefit-icon {
+  font-size: 4rem;
+  color: #aa0c0c;
+  margin: 0.5rem 0;
+}
+
+
 .col, [class*=col-] {
   padding: 0;
 }
 
-h1 {
-  font-size: 5px;
+h1, h2, h3, h4, h5, h6 {
+  font-family:'Montserrat', sans-serif;
+  color: #aa0c0c;
 }
 
-h2 {
-  font-size: 2em;
-  margin-top: 1em;
-  padding-left: 5em;
-}
-
-h3 {
-  margin: 25px;
+h2, h3, h4 {
+  margin: 0.5rem 0 0.3rem 0;
 }
 
 li {
   padding: 3px;
 }
 
-p {
-  margin: 2em;
-  padding-left: 5em;
-}
 
 .right {
   text-align: right;
 }
 
+.padded-section {
+  padding: 5vw;
+}
+
 /* Banner */
 
-.ban {
+.homepage-banner-section {
   background-image: url('images/whole.jpg');
   background-position: center;
   background-size: cover;
   min-height: 70vh;
+  padding-top: 30vh;
+}
+
+.homepage-banner-section h1, .homepage-banner-section .subtitle {
+  color: white;
+  text-align: center;
+}
+
+/* Benefits */
+.benefit-box {
+  text-align: center;
+  padding: 0 1rem;
 }
 
 /*  About us */
