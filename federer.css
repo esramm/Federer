@@ -67,7 +67,7 @@ nav a:hover {
 }
 
 .menu-button a:hover {
-  color: black;
+  color: #aa0c0c;
 }
 
 header .icon img {
@@ -96,6 +96,7 @@ p {
   font-size: 4rem;
   color: #aa0c0c;
   margin: 0.5rem 0;
+
 }
 
 
@@ -138,7 +139,7 @@ li {
   background-image: url('images/whole.jpg');
   background-position: center;
   background-size: cover;
-  min-height: 70vh;
+  min-height: 90vh;
   padding-top: 30vh;
 }
 
@@ -197,4 +198,23 @@ li {
 /* Contact Us */
 .menu-section {
   text-align: center;
+}
+
+/* Menu */
+.menu-section {
+  text-align: center;
+}
+
+.snipcart-add-item {
+  border: 1px solid black;
+  background-color: #aa0c0c;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+.snipcart-add-item:hover {
+  color: white;
 }
