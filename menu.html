@@ -1,16 +1,6 @@
-<!doctype html>
-<html>
-<head>
-<!-- Title -->
-  <title> Menu </title>
-<!-- Gridlex -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.5/gridlex.min.css">
-<!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat" rel="stylesheet">
-<!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="federer.css">
-</head>
-<body>
+---
+layout: default
+---
 <h2> Menu </h2>
 <section class="grid">
   <div class="col-6_sm-12">
@@ -20,8 +10,8 @@
     </p>
     <button
     class="snipcart-add-item"
-    data-item-id="1"
-    data-item-name="Falafel"
+    data-item-id="{{item.id}}"
+    data-item-name="{{item.name}}"
     data-item-price="10.00"
     data-item-weight="6 pack"
     data-item-url="http://myapp.com/products/"
