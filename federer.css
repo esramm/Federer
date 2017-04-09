@@ -1,0 +1,79 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  border: 0px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #4c4c4c;
+}
+
+/* General */
+
+[class*=grid]{
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+ grid img {
+  max-height: 50vh 12vw;
+
+ }
+
+div .grid .nav {
+  padding-top: 5em;
+}
+/* Navigation*/
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 25px;
+  color: #4c4c4c;
+}
+
+nav a:hover {
+  color: red;
+  font-size: 35px;
+}
+
+/* Header */
+
+h1 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 1em;
+  padding-left: 5em;
+}
+
+p {
+  margin: 2em;
+  padding-left: 5em;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Banner */
+
+.ban {
+  background-image: url('images/whole.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 70vh;
+}
+
+/*  About us */
+
+.team {
+  margin-top: 7em;
+  padding-right: 13em;
+}
