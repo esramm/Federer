@@ -60,6 +60,7 @@ p {
   font-size: 1.25rem;
   line-height: 1.7;
   color: #4d4d4d;
+  text-align: center;
 }
 
 .benefit-icon {
@@ -76,6 +77,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
   font-family:'Montserrat', sans-serif;
   color: #aa0c0c;
+  text-align: center;
 }
 
 h2, h3, h4 {
@@ -83,7 +85,9 @@ h2, h3, h4 {
 }
 
 li {
-  padding: 3px;
+  font-size: 1.25rem;
+  color: #4d4d4d;
+  list-style: none;
 }
 
 
@@ -121,8 +125,25 @@ li {
 }
 
 /*  About us */
+.about-section {
+  text-align: center;
+}
 
 .about-section img {
   padding: 2rem;
   border-radius: 50%;
+}
+
+.location-section {
+
+}
+
+/* Delivery */
+
+.delivery-table {
+
+}
+
+.delivery-row {
+  padding: 1rem 0;
 }
