@@ -6,7 +6,7 @@
 <!-- Gridlex -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.5/gridlex.min.css">
 <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Aclonica|Josefin+Sans" rel="stylesheet">
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <!-- CSS -->
@@ -104,13 +104,20 @@
   </div>
 </section>
 
-<section="Contact Us">
-<form action="https://formspree.io/esra_cetinkaya33@hotmail.com"
+<section class="contact-section grid padded-section alternate-section">
+  <h2 class="col-12"> Contact Us </h2>
+  <div class="col-6"> </div>
+  <div class="col-6">
+    <form action="https://formspree.io/esra_cetinkaya33@hotmail.com"
       method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
+      <input type="text" name="name" placeholder="Your name">
+      <input type="phone" name="phone" placeholder="Your phone number">
+      <input type="email" name="email" placeholder="Your email">
+      <textarea name="message" placeholder="Your message" rows="5"></textarea>
+      <input type="submit" value="Send">
+    </div>
 </form>
+  </div>
 </section>
 
 </body>

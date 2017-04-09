@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5rem;
 }
 
@@ -27,6 +27,27 @@ img {
 div .grid .nav {
   padding-top: 5em;
 }
+
+input, textarea {
+  width: 100%;
+  min-height: 2rem;
+  border-radius: 5px;
+  margin: 0.25rem;
+  font-size: 1.1rem;
+}
+
+input[type=text], input[type=email], input[type=phone], textarea {
+  border: 1px solid #989898;
+  min-height: 2.5rem;
+  padding: 8px 8px;
+}
+
+input[type=submit] {
+  background-color: #aa0c0c;
+  color: white;
+  font-size: 1.25rem;
+}
+
 /* Navigation*/
 
 nav a {
@@ -49,7 +70,7 @@ header .icon img {
 header .name {
   text-align: left;
   font-size: 1.8rem;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Aclonica', sans-serif;
   margin: 10px 0;
   color: #aa0c0c;
 }
@@ -75,7 +96,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family:'Montserrat', sans-serif;
+  font-family: 'Aclonica', sans-serif;
   color: #aa0c0c;
   text-align: center;
 }
@@ -146,4 +167,9 @@ li {
 
 .delivery-row {
   padding: 1rem 0;
+}
+
+/* Contact Us */
+.contact-section {
+
 }
