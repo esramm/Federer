@@ -37,20 +37,27 @@ nav a {
 
 nav a:hover {
   color: red;
-  font-size: 35px;
 }
 
 /* Header */
 
 h1 {
   font-family: 'Comfortaa', cursive;
-  font-size: 60px;
+  font-size: 45px;
 }
 
 h2 {
   font-size: 2em;
   margin-top: 1em;
   padding-left: 5em;
+}
+
+h3 {
+  margin: 25px;
+}
+
+li {
+  padding: 3px;
 }
 
 p {
@@ -76,4 +83,8 @@ p {
 .team {
   margin-top: 7em;
   padding-right: 13em;
+}
+
+.red {
+  background-color: red;
 }
