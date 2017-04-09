@@ -48,6 +48,9 @@ input[type=submit] {
   font-size: 1.25rem;
 }
 
+.general-padding {
+  padding: 1rem;
+}
 /* Navigation*/
 
 nav a {
@@ -63,11 +66,12 @@ nav a:hover {
 }
 
 .menu-button:hover {
-  background-color: #ececec;
+  background-color: #4d4d4d;
 }
 
 .menu-button a:hover {
-  color: #aa0c0c;
+  color: white;
+  font-weight: bold;
 }
 
 header .icon img {
@@ -133,6 +137,10 @@ li {
   background-color: #efefef;
 }
 
+.events-section {
+  text-align: center;
+}
+
 /* Banner */
 
 .homepage-banner-section {
@@ -162,10 +170,6 @@ li {
 .about-section img {
   padding: 2rem;
   border-radius: 50%;
-}
-
-.location-section {
-
 }
 
 /* Delivery */
@@ -207,6 +211,8 @@ li {
 
 .snipcart-add-item {
   border: 1px solid black;
+  color: white;
+  font-weight: bold;
   background-color: #aa0c0c;
   text-align: center;
   border-radius: 1rem;
@@ -217,4 +223,6 @@ li {
 
 .snipcart-add-item:hover {
   color: white;
+  background-color: #4d4d4d;
+  font-weight: bold;
 }

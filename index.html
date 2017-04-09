@@ -11,15 +11,15 @@ benefits:
     blurb: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     icon: check-circle
 events:
-  - name: Corporate
+  - name: Corporate Packages
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     image_path: /uploads/wedding.jpg
     alt: Corporate Events
-  - name: Weddings
+  - name: Wedding Packages
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     image_path: /uploads/wedding.jpg
-    alt: Weddings
-  - name: Events
+    alt:  Wedding Packages
+  - name: Event Packages
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     image_path: /uploads/wedding.jpg
     alt: Events
@@ -67,22 +67,24 @@ events:
 </section>
 
 
-<section class="events-section padded-section alternate-section">
+<section class="events-section padded-section alternate-section" id="Events">
   <h2> Events </h2>
   <div class="grid">
     {% for event in page.events %}
   <div class="col-4">
   <img src="{{event.image_path}}" alt="{{event.alt}}"/>
   <h3> {{event.name}} </h3>
-  <p> {{event.description}}
+  <p class="general-padding"> {{event.description}}
   </p>
 </div>
 {% endfor %}
 </div>
+<button class="menu-button">
+  <a href="/index.html#Contact"> Enquire Below </a>
+</button>
 </section>
 
-<section class="grid-spaceBetween location-section">
-
+<section class="grid-spaceBetween">
   <div class="col-7 padded-section">
     <h2> Where we Deliver! </h2>
     <p>
