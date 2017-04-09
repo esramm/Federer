@@ -30,20 +30,37 @@ div .grid .nav {
 
 nav a {
   text-decoration: none;
-  padding: 10px;
-  font-size: 25px;
-  color: #4c4c4c;
+  padding: 30px 10px;
+  font-size: 1em;
+  color: #aa0c0c;
+  display: inline-block;
 }
 
 nav a:hover {
-  color: red;
+  background-color: #ececec;
+}
+
+header .icon img {
+  height: 70px;
+  margin: 5px;
+}
+
+header .name {
+  text-align: left;
+  font-size: 1.5em;
+  font-family: 'Comfortaa', cursive;
+  margin: 10px 0;
+  color: #aa0c0c;
 }
 
 /* Header */
 
+.col, [class*=col-] {
+  padding: 0;
+}
+
 h1 {
-  font-family: 'Comfortaa', cursive;
-  font-size: 45px;
+  font-size: 5px;
 }
 
 h2 {
