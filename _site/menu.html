@@ -22,39 +22,41 @@
     </div>
     <div class="col-4 name"> Traditionally Turkish
     </div>
-    <nav class="col-6_md-6_sm-0 right">
+    <nav class="col-6_md-6_sm-0_xs-0 right">
       <a href="/index.html"> Home </a>
       <a href="/index.html#About-Us"> About </a>
       <a href="#menu"> Menu </a>
       <a href="#Events"> Events </a>
       <a href="/menu.html"> Make an Order </a>
       <a href="/index.html#Contact"> Contact Us </a>
-      <div class="burger-button">
-          <span class="burger-top"></span>
-          <span class="burger-middle"></span>
-          <span class="burger-bottom"></span>
-      </div>
-      <div class="burger-menu mobile-show">
-        <ul>
-          <li>
-            <a href="/index.html">Home</a>
-          </li>
-          <li>
-            <a href="/index.html.menu">Menu</a>
-          </li>
-          <li>
-            <a href="/index.html#Events"> Events </a>
-          </li>
-          <li>
-            <a href="/menu.html"> Make an Order</a>
-          </li>
-          <li>
-            <a href="/index.html#Contact"> Contact Us </a>
-          </li>
-        <ul>
-      </div>
 
     </nav>
+</div>
+    <div class="burger-button mobile-show">
+        <span class="burger-top"></span>
+        <span class="burger-middle"></span>
+        <span class="burger-bottom"></span>
+    </div>
+    <div class="burger-menu">
+      <ul>
+        <li>
+          <a href="/index.html">Home</a>
+        </li>
+        <li>
+          <a href="/index.html#menu">Menu</a>
+        </li>
+        <li>
+          <a href="/index.html#Events"> Events </a>
+        </li>
+        <li>
+          <a href="/menu.html"> Make an Order</a>
+        </li>
+        <li>
+          <a href="/index.html#Contact"> Contact Us </a>
+        </li>
+      <ul>
+    </div>
+
   </div>
 </header>
 <section class="menu-section grid padded-section alternate-section">
@@ -67,9 +69,9 @@
     </p>
     <button 
     class="snipcart-add-item"
-    data-item-id=""
+    data-item-id="1"
     data-item-name=""
-    data-item-price="10.00"
+    data-item-price="10.0"
     data-item-weight="6"
     data-item-url="http://myapp.com/products/"
     data-item-description="Some fresh Falafel">
@@ -84,9 +86,9 @@
     </p>
     <button 
     class="snipcart-add-item"
-    data-item-id=""
+    data-item-id="2"
     data-item-name=""
-    data-item-price="10.00"
+    data-item-price="10.0"
     data-item-weight="6"
     data-item-url="http://myapp.com/products/"
     data-item-description="Some fresh Falafel">
@@ -101,9 +103,9 @@
     </p>
     <button 
     class="snipcart-add-item"
-    data-item-id=""
+    data-item-id="3"
     data-item-name=""
-    data-item-price="10.00"
+    data-item-price="10.0"
     data-item-weight="6"
     data-item-url="http://myapp.com/products/"
     data-item-description="Some fresh Falafel">
@@ -118,9 +120,9 @@
     </p>
     <button 
     class="snipcart-add-item"
-    data-item-id=""
+    data-item-id="4"
     data-item-name=""
-    data-item-price="10.00"
+    data-item-price="10.0"
     data-item-weight="6"
     data-item-url="http://myapp.com/products/"
     data-item-description="Some fresh Falafel">
@@ -160,13 +162,8 @@
 
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="MmQ1NDYzNzctMjQxMi00YmE0LWIwZjItYTNmMzNlMTQwY2RkNjM2MjczMjA4NDc3MTAzMDgz" id="snipcart"></script>
 
-<script type="text/javascript">
-$( document ).ready(function() {
-   $(".burger-button").click(function(){
-     $(".burger-button").toggleClass("active");
-     $(".burger-menu").slideToggle();
-   });
-});
+<script type="text/javascript" src="script.js">
+
 </script>
 </body>
 </html>

@@ -6,21 +6,25 @@ menu:
     des: Description & Food allergy & Ingredients & Minimum quantity
     button:
     price: 10.00
+    id: 1
   - image_path: /uploads/wrap.jpg
     alt: Falafel
     des: Description & Food allergy & Ingredients & Minimum quantity
     button:
     price: 10.00
+    id: 2
   - image_path: /uploads/wrap.jpg
     alt: Falafel
     des: Description & Food allergy & Ingredients & Minimum quantity
     button:
     price: 10.00
+    id: 3
   - image_path: /uploads/wrap.jpg
     alt: Falafel
     des: Description & Food allergy & Ingredients & Minimum quantity
     button:
     price: 10.00
+    id: 4
 
 ---
 <section class="menu-section grid padded-section alternate-section">
@@ -33,9 +37,9 @@ menu:
     </p>
     <button {{menu.button}}
     class="snipcart-add-item"
-    data-item-id="{{item.id}}"
-    data-item-name="{{item.name}}"
-    data-item-price="10.00"
+    data-item-id="{{menu.id}}"
+    data-item-name="{{menu.name}}"
+    data-item-price="{{menu.price}}"
     data-item-weight="6"
     data-item-url="http://myapp.com/products/"
     data-item-description="Some fresh Falafel">

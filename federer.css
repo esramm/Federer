@@ -223,6 +223,24 @@ li {
   font-weight: bold;
 }
 
+/* placeholder text area*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #4d4d4d;
+  font-family: 'Josefin Sans', sans-serif;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #4d4d4d;
+  font-family: 'Josefin Sans', sans-serif;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #4d4d4d;
+  font-family: 'Josefin Sans', sans-serif;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #4d4d4d;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
 /* Mobile responsiveness */
 /* this is where you style the button if you want to add more space between the spans than add padding to this div but make sure you also add it to the top and bottom active classes on there top/bottom or else your cross wont line up*/
 
@@ -230,22 +248,20 @@ li {
   display: none;
 }
 
-@media screen and (max-width: 48em) {
-.mobile-hide{
-  display: none;
+@media (max-width: 48em) {
+    .mobile-hide{
+      display: none;
+    }
+    .mobile-show {
+      display: inline-block;
+    }
 }
-.mobile-show: {
-  display: inline-block;
-}
-}
-
 .burger-button {
   position:fixed;
   top: 2vh;
   right: 2vh;
-  z-index: 9999999999;
+  z-index: 999;
   padding: 8px;
-  display: none;
 }
 /*this is where you can chand the color of the buttons*/
 .burger-button span{
@@ -253,7 +269,7 @@ li {
   border: 2px solid black;
   display: block;
   border-radius: 22px;
-  /*--transition: 2s;--*/
+  transition: 2s;
 }
 .burger-top, .burger-bottom{
   position: absolute;
@@ -270,21 +286,20 @@ li {
 .burger-button.active .burger-top{
   position: absolute;
   top: 8px;
-  /*--transform: rotateZ(45deg);--*/
+  transform: rotateZ(45deg);
 }
 
 .burger-button.active .burger-middle{
-  /*--transform: rotateZ(270deg);--*/
+  transform: rotateZ(270deg);
   border-color: rgba(0,0,0,0)
 }
 
 /* make sure this has the same bottom as the burger button has padding*/
 
-
 .burger-button.active .burger-bottom{
   position: absolute;
   bottom: 8px;
-  /*--transform: rotateZ(-45deg);--*/
+  transform: rotateZ(-45deg);
 }
 
 
@@ -298,7 +313,7 @@ li {
     background-color: #f9f9f9;
     padding:5px;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
-    z-index: 99999999;
+    z-index: 99;
 }
 
 .burger-menu a {
@@ -312,10 +327,12 @@ li {
   padding:5px 15px;
   text-align:center;
   white-space:nowrap;
+  transition: 2s;
+}
+
+.burger-menu a:hover {
+  background-color: #aa0c0c;
+  color: white;
 }
 
 .burger-menu li{list-style:none}
-/*
-.dropdown-nav:hover .dropdown-content {
-    display: block;
-} */
