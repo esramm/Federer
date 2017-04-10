@@ -30,7 +30,7 @@ events:
 </section>
 <section class="benefits-section grid padded-section">
     {% for benefit in page.benefits %}
-  <div class="col-4 benefit-box">
+  <div class="col-4_sm-12 benefit-box">
     <i class="fa fa-{{benefit.icon}} benefit-icon" aria-hidden="true"></i>
     <h3> {{benefit.title}} </h3>
     <p> {{benefit.blurb}}
@@ -71,7 +71,7 @@ events:
   <h2> Events </h2>
   <div class="grid">
     {% for event in page.events %}
-  <div class="col-4">
+  <div class="col-4_sm-12">
   <img src="{{event.image_path}}" alt="{{event.alt}}"/>
   <h3> {{event.name}} </h3>
   <p class="general-padding"> {{event.description}}
@@ -92,15 +92,15 @@ events:
     </p>
     <div class="delivery-table">
       <div class="delivery-row grid">
-      <h3 class="col-4"> Free Delivery </h3>
-      <ul class="col-8">
+      <h3 class="col-4_sm-12"> Free Delivery </h3>
+      <ul class="col-8_sm-12">
        <li> Woden </li>
         <li> Weston </li>
       </ul>
     </div>
     <div class="delivery-row grid">
-    <h3 class="col-4"> $10 Delivery </h3>
-      <ul class="col-4">
+    <h3 class="col-4_sm-12"> $10 Delivery </h3>
+      <ul class="col-4_sm-12">
         <li> Gungahlin </li>
         <li> Tuggeranong </li>
         <li> Belconnen </li>
